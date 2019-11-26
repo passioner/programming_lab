@@ -31,7 +31,6 @@ void string_sub(const char *str, char *out, const int start, const int length)
 	out[length] = '\0';
 }
 
-/*
 int main()
 {
 	const char *A = "my name is hanmeimei";
@@ -41,4 +40,3 @@ int main()
 	printf("%s: %s\n", __func__, p);
 	return 0;
 }
-*/
