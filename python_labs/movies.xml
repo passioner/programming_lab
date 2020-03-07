@@ -1,0 +1,44 @@
+<collection shelf="New Arrivals">
+<movie title="Enemy Behind">
+   <type>War, Thriller</type>
+   <format>DVD</format>
+   <year>2003</year>
+   <rating>PG</rating>
+   <stars>10</stars>
+   <description>Talk about a US-Japan war</description>
+</movie>
+<details>
+<unsafe_func>
+<file_name>
+	<description line="13">memset</description>
+	<description line="24">memcpy</description>
+	<description line="33">memset</description>
+	<description line="44">memcpy</description>
+	<description line="53">memset</description>
+</file_name>
+<file_name>
+	<description line="13">memset</description>
+	<description line="24">memcpy</description>
+	<description line="33">memset</description>
+	<description line="44">memcpy</description>
+	<description line="53">memset</description>
+</file_name>
+</unsafe_func>
+<reduntant_code>
+<file_name name="first_FILE">
+   <description line="12">(0, 1),(2, 4)</description>
+   <description line="22">(3, 1),(9, 0)</description>
+   <description line="32">(6, 1),(7, 5)</description>
+   <description line="42">(2, 1),(1, 3)</description>
+   <description line="52">(8, 1),(4, 7)</description>
+</file_name>
+<file_name name="second_FILE">
+   <description line="13">(4, 1),(2, 4)</description>
+   <description line="24">(7, 2),(3, 0)</description>
+   <description line="33">(1, 4),(8, 7)</description>
+   <description line="44">(9, 1),(7, 7)</description>
+   <description line="53">(1, 9),(1, 7)</description>
+</file_name>
+</reduntant_code>
+</details>
+</collection>
