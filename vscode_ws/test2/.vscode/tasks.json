@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build with Clang",
+        "type": "shell",
+        "command": "clang",
+        "args": [
+          "-g",
+          "-std=c11",
+          //"-stdlib=libc",
+          "${file}",
+          "-o",
+          "a.out",
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }

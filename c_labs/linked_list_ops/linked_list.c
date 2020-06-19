@@ -3,7 +3,7 @@
 
 typedef struct Node {
 	int val;
-	struct *Node next;
+	struct Node *next;
 } link_list;
 
 link_list * creat(n)
@@ -58,7 +58,7 @@ void print_list(link_list *head)
 {
 	link_list *t = head;
 	while(t != NULL) {
-		printf("%s: val=%d\n", __func__, val);
+		printf("%s: val=%d\n", __func__, t->val);
 		t = t->next;
 	}
 }
