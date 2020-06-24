@@ -4,6 +4,8 @@ $(DEFAULT_GOAL)
 
 OUTFILE := myout
 
+all_objs :=
+
 subdirs :=
 subdirs += app
 subdirs += driver
