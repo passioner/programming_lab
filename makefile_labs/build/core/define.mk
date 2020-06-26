@@ -6,10 +6,10 @@ $(patsubst %/, %, $(dir $(LOCAL_MODULE_MAKEFILE))) \
 endef
 
 define gen-intermediates-dir
-$(strip $(addprefix $(TOPDIR)/,$(subst ../,$(DOTDOT_REPLACEMENT),$(LOCAL_PATH))))
+$(strip $(addprefix $(OUTDIR)/, $(subst ../, $(DOTDOT_REPLACEMENT), $(LOCAL_PATH))))
 endef
 
 define transform-c-to-o
-mkdir -p $(dir $@)
-$(CC) -c $(PRIVATE_GLOBAL_CFLAGS) $(PRIVATE_CFLAGS) -D__FILE_NAME__='$(patsubst %.c,%,$(notdir $<))' $< -o $@
+$(Q)mkdir -p $(dir $@)
+$(CC) -c $(PRIVATE_GLOBAL_CFLAGS) $(PRIVATE_CFLAGS) $< -o $@
 endef
